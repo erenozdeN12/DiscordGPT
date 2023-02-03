@@ -1,6 +1,6 @@
 # DiscordGPT
 
-Discord chat bot using Discord.py & OpenAI GPT-3 model. <br />
+Discord chat bot using DiscordPy & OpenAI GPT-3 model. <br />
 Usage: <br />
 
 1. Download or Clone repository.
