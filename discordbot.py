@@ -29,7 +29,7 @@ async def gpt(ctx: commands.Context, *, prompt: str):
         headers = {"Authorization": f"Bearer {ai.api_key}"}
         async with session.post("https://api.openai.com/v1/completions", json=payload, headers=headers) as resp:
             resp = await resp.json()
-            embed = discord.Embed(title="Chat GPT'nin cevabı", description=resp["choices"][0]["text"])
+            embed = discord.Embed(title="GPT's Answer", description=resp["choices"][0]["text"])
             await ctx.reply(embed=embed)
 
 bot.run(token)
